@@ -1,7 +1,9 @@
 import os
 import binascii
 
-for subdir, dirs, files in os.walk(r'G:\Games\Wii U\DATA\USA\GAMES'):
+folder_name = "INSERT_YOUR_FOLDER_NAME_HERE"
+
+for subdir, dirs, files in os.walk(folder_name):
     for filename in files:
         filepath = subdir + os.sep + filename
 
